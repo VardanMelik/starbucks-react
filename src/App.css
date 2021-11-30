@@ -102,6 +102,39 @@ section a {
 }
 
 
+/* Footer & Social */
+
+.footer-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px 30px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin: 20 px 0;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+}
+
+.social a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.divider {
+    width: 95%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px auto;
+}
+
+
 /*  Box  */
 
 .box {
@@ -257,6 +290,68 @@ section a {
     padding: 40px 0;
 }
 
+
+/* Hamburger Menu Icon */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px)
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.hamburger {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-reversed:first-child {
+        order: 0;
+    }
+    .navbar .navbar-nav-left,
+    .navbar .navbar-nav-right {
+        display: none;
+    }
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer {
+        text-align: center;
+    }
+}
+
 @media(max-width: 960px) {
     .text-xl {
         font-size: 30px;
@@ -274,5 +369,8 @@ section a {
         max-width: 1440px;
         margin-right: auto;
         margin-left: auto;
+    }
+    .divider {
+        max-width: 90%;
     }
 }

@@ -9,6 +9,9 @@ import BoxFLogo from './assets/box-f1.jpg';
 import SocialSpotifyLogo from './assets/social-spotify.svg';
 import SocialFacebookLogo from './assets/social-facebook.svg';
 import SociaPinterestLogo from './assets/social-pinterest.svg';
+import SocialInstagramLogo from './assets/social-instagram.svg';
+import SocialYoutubeLogo from './assets/social-youtube.svg';
+import SocialTwitterLogo from './assets/social-twitter.svg';
 
 
 /*function importAll(r) {
@@ -60,6 +63,13 @@ function App() {
               </button>
             </li>
           </ul>
+
+          {/* Hamburger Menu */}
+          <button type="button" className="hamburger" id="menu-btn">
+            <span className="hamburger-top"></span>
+            <span className="hamburger-middle"></span>
+            <span className="hamburger-bottom"></span>
+          </button>
         </div>
       </nav>
 
@@ -157,12 +167,16 @@ function App() {
               <img src={SociaPinterestLogo} alt="Pinterest" />
             </a>
             <a href="#">
-              <img src="" alt="" />
+              <img src={SocialInstagramLogo} alt="Instagram" />
             </a>
             <a href="#">
-              <img src="" alt="" />
+              <img src={SocialYoutubeLogo} alt="Youtube" />
+            </a>
+            <a href="#">
+              <img src={SocialTwitterLogo} alt="Twitter" />
             </a>
           </div>
+          <p> 2021 Starbucks Coffee Company. All right reserved.</p>
         </div>
       </footer>
 
